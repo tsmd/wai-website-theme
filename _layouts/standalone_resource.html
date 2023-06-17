@@ -310,25 +310,7 @@ h2#sidebar-header {
 
   </div>
 
-    <div class="default-grid with-gap leftcol">
-      <div class="standalone-resource__prevnext">
-      {%- if page.navigation -%}
-        {%- include prevnext-navigation.html -%}
-      {%- else -%}
-        {%- if page.order -%}
-          {%- include prevnext-order.html -%}
-        {%- endif -%}
-      {%- endif -%}
-
-      {% include feedback-box.html %}
-      </div>
-    </div>
     {% include_cached backtotop.html lang=page.lang %}
-  </div>
-
-
-  {% include footer.html lang=pagelang inner-style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;" %}
-
 
   </body>
 
